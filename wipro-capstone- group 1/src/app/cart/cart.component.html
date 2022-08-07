@@ -38,5 +38,6 @@
     <option *ngFor="let disc of discounts" [value]="disc.percentage">
         {{disc.percentage}}
     </option>
+    <h2 *ngIf="!success" class="loginhead"><a routerLink="/signin">Login</a> to see your cart</h2>
 </select>
 

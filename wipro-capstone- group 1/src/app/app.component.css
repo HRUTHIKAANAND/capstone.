@@ -37,4 +37,17 @@
     font-weight:bold;
 }
 
+.red{
+    color: red;
+}
+.black{
+    background-color: black;
+}
+.padding{
+    padding-top: 12px;
+}
+.white{
+    color:aliceblue;
+}
+
 
