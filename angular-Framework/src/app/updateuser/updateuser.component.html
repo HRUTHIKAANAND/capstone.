@@ -1,0 +1,39 @@
+<section class="padding">
+  <p class="reghead textcenter" style="font-weight:bold;padding-bottom:10px ">Update User Details</p>
+  <form class="border" [formGroup]="editUser" (ngSubmit)="collection()">
+     <div id="form_login">
+        <div class="formclass">
+          
+          <div class="form-group">
+            <label for="exampleInputEmail1">id</label>
+          <input class="form-control" type="number" name="id" formControlName="id" placeholder="id"><br>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">UserName</label>
+          <input class="form-control" type="text" name="username" formControlName="username" placeholder="Username" ><br>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Password</label>
+          <input class="form-control" type="text" name="password" formControlName="password" placeholder="Password" ><br>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">address</label>
+          <input class="form-control" type="text" name="address" formControlName="address" placeholder="address" ><br>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">phone</label>
+          <input class="form-control" type="text" name="phone" formControlName="phone" placeholder="phone" ><br>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Role</label>
+          <input class="form-control" type="text" name="role" formControlName="role" placeholder="role" ><br>
+          </div>
+          <button  class="btn btn-primary dark" id="just" type="submit">Update</button><br>
+        </div>
+      </div>
+    </form>
+</section>
+
+        
+
+   <!-- <p>adminproduct works</p> -->

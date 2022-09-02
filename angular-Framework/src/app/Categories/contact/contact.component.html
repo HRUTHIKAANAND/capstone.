@@ -1,0 +1,26 @@
+<section class="padding">
+  <h2 style="font-weight:bold;padding-bottom:10px;text-align: center;" class="textcenter">Email to Vendor </h2>
+    <form class="border" #userform="ngForm" (ngSubmit)="contact()" id="form_login">
+      <div *ngIf="success" class="formclass">
+        
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email</label>
+        <input class="form-control" type="Email" name="Email" autocomplete="on" required #EmailControl="ngModel" [(ngModel)]="username" placeholder="Enter the email"><br>
+        <p class="alert alert-danger" *ngIf="EmailControl.touched && EmailControl.invalid">Email required</p>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Subject</label>
+        <input class="form-control" type="text" name="subject" required #subjectControl="ngModel" [(ngModel)]="subject" placeholder="subject"><br>
+        <p class="alert alert-danger" *ngIf="subjectControl.touched && subjectControl.invalid">subject required</p>
+        </div>
+        <div class="form-group">
+        <label for="exampleInputEmail1">Body</label>
+
+        <textarea class="form-control" id="subject" name="body" #usernameControl="ngModel" [(ngModel)]="body" placeholder="Body of the mail" style="height:200px"></textarea>
+        
+      </div>
+        <p *ngIf="userform.valid && success && onclick">Fill all the details</p>
+        <button [disabled]="!userform.valid" class="btn btn-dark link dark" type="submit">Submit</button><br>
+      </div>
+    </form>
+    </section>

@@ -1,0 +1,43 @@
+<section class="padding">
+  <p class="textcenter" style="font-weight:bold;padding-bottom:10px ">Update product Details</p>
+<form class="border" [formGroup]="editProduct">
+  <div class="formclass" id="form_login">
+    
+      
+      <div class="form-group">
+        <label for="exampleInputEmail1">ProductId</label>
+      <input class="form-control" type="number" name="Pid" formControlName="Pid" placeholder="ProductId"><br>
+      </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1">ProductName</label>
+      <input class="form-control" type="text" name="Pname"  formControlName="Pname" placeholder="Enter the pname"><br>
+      </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Description</label>
+      <input class="form-control" type="text" name="Description"  formControlName="Description" placeholder="Enter the description"><br>
+      </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Price</label>
+      <input class="form-control" type="number" name="price" formControlName="Price"  placeholder="Enter the price"><br>
+      </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1">ImageUrl</label>
+      <input class="form-control" type="text" name="Image" formControlName="Image" placeholder="Enter the image url"><br>
+      </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Stockquantity</label>
+      <input class="form-control" type="number" name="Stockquantity" formControlName="Stockquantity"  placeholder="Enter the stock quantity"><br>
+      </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Category</label>
+      <input class="form-control" type="text" name="Category" formControlName="Category"  placeholder="Enter the category"><br>
+      </div>
+      <button class="btn btn-primary dark" id="just" type="submit" (click)="collection()" >Update</button><br>
+    
+  </div>
+</form>
+</section>
+  
+  
+  
+   <!-- <p>adminproduct works</p> -->

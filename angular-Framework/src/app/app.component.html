@@ -1,0 +1,31 @@
+<article class="black">
+<header class="main-header">
+  <div class="shopname btn btn-dark text-white"><a routerLink="/home" class="shopname">Online Shopping</a></div>
+  
+  <div class="widget-cart"><a routerLink="/cart" class="white" class="icon icon-md rounded-circle border"><i class="fa fa-shopping-cart white"></i></a>
+  <a routerLink="/wishlist" class="icon " class="red"><i class="bi bi-heart-fill"></i></a>
+  <a class="white n" routerLink="/myorders">Myorders</a>
+    <app-usersession></app-usersession>
+    <p>|</p> 
+    <a class="white" routerLink="/register">Register</a>
+</div>
+
+</header>
+<nav class="navbar navbar-main navbar-expand-lg navbar-light border-bottom divider">
+<div class="categories">
+<a class="nav-link badge badge-dark g"  routerLink="/home">Home</a>
+<a class="nav-link badge badge-dark g " routerLink="/garden">Garden&Outdoor</a>
+<a class="nav-link badge badge-dark g" routerLink="/furniture">Furniture</a>
+<a class="nav-link badge badge-dark g" routerLink="/carpet">Carpets</a>
+<a class="nav-link badge badge-dark g" routerLink="/electronics">Appliances</a>
+<a class="nav-link badge badge-dark g" routerLink="/furnishings">Furnishings</a>
+<a class="nav-link badge badge-dark g" routerLink="/beds">Beds&Mattresses</a>
+<a class="nav-link badge badge-dark g" routerLink="/discount">My Coupons</a>
+<!-- <a class="nav-link" routerLink="/contact">Contact Us</a> -->
+</div>
+</nav>
+
+
+</article>
+
+<router-outlet></router-outlet>
